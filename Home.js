@@ -293,7 +293,7 @@ export default function BilloApp({ navigation }) {
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.scanButton}>
+        <TouchableOpacity style={styles.scanButton} onPress={() => navigation.navigate('QRcode')}>
           <ScanQrCode size={28} color="#fff" />
         </TouchableOpacity>
 
